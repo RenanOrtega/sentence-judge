@@ -6,8 +6,8 @@ async function registerCommands() {
         new SlashCommandBuilder()
             .setName('responder')
             .setDescription('Responde a um usuário usando a IA com base em um texto.')
-            .addUserOption(option => option.setName('usuario').setDescription('O usuário do Discord.').setRequired(true))
-            .addStringOption(option => option.setName('text').setDescription('Texto a ser respondido.').setRequired(true))
+            .addUserOption(option => option.setName('delinquente').setDescription('O usuário do Discord.').setRequired(true))
+            .addStringOption(option => option.setName('frase').setDescription('Frase do delinquente.').setRequired(true))
     ].map(command => command.toJSON());
 
     const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);

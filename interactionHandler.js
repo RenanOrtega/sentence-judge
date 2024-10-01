@@ -16,8 +16,8 @@ async function handleInteraction(interaction) {
     }
 
     if (commandName === 'responder') {
-        const user = interaction.options.getUser('usuario');
-        const text = interaction.options.getString('text');
+        const user = interaction.options.getUser('delinquente');
+        const text = interaction.options.getString('frase');
 
         if (!user || !text) {
             await interaction.reply({
