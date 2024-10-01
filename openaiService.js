@@ -8,7 +8,7 @@ async function generateAIResponse(text) {
     try {
         const chatCompletion = await openai.chat.completions.create({
             messages: [
-                { role: 'system', content: 'Temos um canal no Discord onde colocamos diversas frases ditas pela galera, frases que podem ser comprometedoras, quero que você seja um juiz e de um castigo de acordo com a frase, seja mais agressivo e breve.' },
+                { role: 'system', content: 'Temos um canal no Discord onde colocamos diversas frases ditas pela galera, frases que podem ser comprometedoras, quero que você seja um juiz e de um castigo de acordo com a frase, seja mais descontraido, informal, agressivo e breve.' },
                 { role: 'user', content: text }
             ],
             model: 'gpt-3.5-turbo-0125'
